@@ -12,6 +12,12 @@
 | git 操作协议 | HTTPS（由 `gh` 作为 credential helper） |
 | git 提交身份 | `CHATUL1` / `64731379+CHATUL1@users.noreply.github.com` |
 
+## 仓库
+
+- `githubspace`（public）：https://github.com/CHATUL1/githubspace
+- 本地：`D:\workspace`，默认分支 `main`，`origin` 已配置
+- `tools/` 已加入 `.gitignore`（便携版二进制不进仓库）
+
 ## 工具位置（全部在 D 盘）
 
 | 工具 | 路径 |
