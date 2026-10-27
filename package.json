@@ -1,7 +1,7 @@
 {
   "name": "githubspace",
-  "version": "0.1.0",
-  "description": "Personal DSH workspace, packaged as an installable plugin bundle.",
+  "version": "0.2.0",
+  "description": "Personal DSH workspace repository, packaged as an installable plugin bundle.",
   "type": "module",
   "main": "./index.js",
   "exports": {
@@ -15,9 +15,21 @@
     "locale/*.json",
     "icon.svg"
   ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness"
+  ],
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "catalog": {
+      "category": "other",
+      "summary": {
+        "en": "Installs the personal githubspace workspace repository as a manageable DSH bundle; it ships the bundle shell only.",
+        "zh": "把个人 githubspace 工作区仓库作为可管理的 DSH 组合包装载；当前仅提供组合包骨架，没有运行时组件。"
+      },
+      "capabilities": []
     }
   },
   "license": "MIT",

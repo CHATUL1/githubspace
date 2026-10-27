@@ -5,3 +5,4 @@ tools/
 # 本地临时目录与备份
 tmp/
 backup/
+output/

@@ -23,6 +23,15 @@
 2. 浏览器端 UI 需要增加 `dsh.client` 段、`./client` 导出和一个 `client.js`（模块加载器工厂，id 与包名一致）。
 3. 新增文件记得同步到 `package.json` 的 `exports` / `files`，否则 git 安装后读不到。
 
+## 上架 dsh-plugin-shop
+
+商店的目录由每日构建**自动抓取**，不需要提 PR：仓库带 `dsh-plugin`（或 `deepseek-harness`）topic，根目录 `package.json` 有 `name` 和 `dsh.bundle`，就会被收录。
+
+- 当前已设置 topic `dsh-plugin`、`deepseek-harness`
+- `dsh.catalog` 声明了分类（`other`）、中英简介和能力列表（空，因为不调用任何 dsh 服务）
+- 收录门槛：`license` 与 `repository` 必填、无构建脚本、无 `workspace:` 依赖、bundle 要加载的文件必须提交在仓库里
+- 上架后商店按默认分支的 commit 固定版本；之后每次推送，下一轮构建会重新读取
+
 ## 环境
 
 - Git 2.56.0 · GitHub CLI 2.103.3（均在 `tools/`）
