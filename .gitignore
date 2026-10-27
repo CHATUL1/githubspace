@@ -1,3 +1,7 @@
-﻿# 本机工具目录（便携版 Git / GitHub CLI，勿提交）
+# 本机工具目录（便携版 Git / GitHub CLI，勿提交）
 tools/
 *.log
+
+# 本地临时目录与备份
+tmp/
+backup/
